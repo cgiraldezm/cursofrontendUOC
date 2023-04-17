@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="tobpar">  
+    <a href="#"><img src="assets/hero.jpeg" alt="home icon"></a>
+    <section id="contact">
+    </header>
+
+        <h2>Contacte</h2>
+
+        <form action=""><!-- Formulari -->
+
+            <label for="f_name">Name</label><!-- Etiqueta lligada a un camp a través de l'atribut "for", al que se li indica l'ID del camp al quan fa referència-->
+            <input type="text" name="name" id="f_name" placeholder="Your name"><!-- Input de tipus text. L'atribut "name" s'utilitza per tractar la informació quan s'envia el formulari.
+            l'atribut "id" serveix per identificar el camp desde JavaScript i per lligar-lo a una etiqueta. "placeholder" és un text per defecte per indicar a l'usuari que hi ha d'escriure. -->
+
+            <label for="f_name">Email</label>
+            <input type="email" name="email" id="f_email" placeholder="Your email"><!-- Input de tipus email -->
+
+            <label for="f_tarea">Comments</label>
+            <textarea name="comments" id="f_tarea" cols="30" rows="10"></textarea><!-- Caixa de text de múltiples columnes i files -->
+
+
+            <fieldset><!-- Grup de camps -->
+                <legend>Colors</legend><!-- Llegenda del grup de camps -->
+                <label for="radio_red">Red</label><!-- Radio button: si tots comparteixen el mateix atribut "name", només es podrà seleccionar una sola opció del grup. L'atribut "value" 
+                és el valor que es capturarà del formulari, segons l'input que s'hagi seleccionat. -->
+                <input type="radio" name="radio_colors" id="radio_red" value="red">
+
+                <label for="radio_green">Green</label>
+                <input type="radio" name="radio_colors" id="radio_green" value="green">
+
+                <label for="radio_blue">Blue</label>
+                <input type="radio" name="radio_colors" id="radio_blue" value="blue">
+            </fieldset>
+
+            <label for="f_accept">Acepto los términos y condiciones de la web</label>
+            <input type="checkbox" name="accept" id="f_accept"><!-- Checkbox -->
+
+            <input type="submit" value="Send Form"><!-- Botó d'enviament del formulari amb el text "Send Form"-->
+
+        </form>
+    </section>
+    
+
+</body>
+</html>
